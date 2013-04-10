@@ -1,7 +1,10 @@
 /* app css stylesheet */
 a:hover{
 	text-decoration: none !important;
+}
 
+body{
+	overflow-x:hidden;
 }
 .ticker-item {
   -webkit-transition: all .2s ease-in;
@@ -18,7 +21,7 @@ a:hover{
 .photobanner {
     height: 30px;
     padding-top:10px;
-    width: 23500px;
+    width: 16500px;
     padding-left:70%;
     background-color: rgb(20,20,20);
 }
@@ -80,7 +83,7 @@ toc
     margin-left: 0px;
  }
  100% {
-    margin-left: -19200px;
+    margin-left: -16200px;
  }
  
 }
@@ -90,7 +93,7 @@ toc
    margin-left: 0px;
  }
  100% {
-   margin-left: -19200px;
+   margin-left: -16200px;
  }
  
 }
@@ -100,7 +103,7 @@ toc
    margin-left: 0px;
  }
  100% {
-   margin-left: -19200px;
+   margin-left: -16200px;
  }
  
 }
@@ -110,7 +113,7 @@ toc
    margin-left: 0px;
  }
  100% {
-   margin-left: -19200px;
+   margin-left: -16200px;
  }
  
 }
@@ -120,7 +123,7 @@ toc
    margin-left: 0px;
  }
  100% {
-   margin-left: -19200px;
+   margin-left: -16200px;
  }
  
 }
