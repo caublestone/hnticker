@@ -1,5 +1,8 @@
 /* app css stylesheet */
+a:hover{
+	text-decoration: none !important;
 
+}
 .ticker-item {
   -webkit-transition: all .2s ease-in;
   -moz-transition: all .2s ease-in;
@@ -9,4 +12,108 @@
 
 .inactive {
     display: none;
+}
+
+/** Photobanner Style **/
+.photobanner {
+    height: 30px;
+    padding-top:10px;
+    width: 26500px;
+
+    padding-left:90%;
+    background-color: rgb(20,20,20);
+}
+.photobanner.two{
+	background-color: rgb(40,40,40);
+	padding-top:10px;
+
+
+}
+.tickerText{
+	font-family: 'Droid Sans Mono', sans-serif;
+    text-decoration:none !important;
+    color:white;
+}
+.tickertText.up{
+	color:rgb(20,235,20);
+}
+
+.tickerText.down{
+	color:red;
+}
+
+toc
+.tickerText:hover{
+	color:rgb(245,245,245);
+}
+
+.object-span{
+	width:auto;
+}
+
+/*keyframe animations*/
+.photobanner:nth-child(2){
+    -webkit-animation: bannermove 230s linear infinite;
+       -moz-animation: bannermove 230s linear infinite;
+        -ms-animation: bannermove 230s linear infinite;
+         -o-animation: bannermove 230s linear infinite;
+            animation: bannermove 230s linear infinite;
+}
+
+.photobanner.two:nth-child(3){
+    -webkit-animation: bannermove 200s linear infinite;
+       -moz-animation: bannermove 200s linear infinite;
+        -ms-animation: bannermove 200s linear infinite;
+         -o-animation: bannermove 200s linear infinite;
+            animation: bannermove 200s linear infinite;
+}
+ 
+@keyframes "bannermove" {
+ 0% {
+    margin-left: 0px;
+ }
+ 100% {
+    margin-left: -25525px;
+ }
+ 
+}
+ 
+@-moz-keyframes bannermove {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -25525px;
+ }
+ 
+}
+ 
+@-webkit-keyframes "bannermove" {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -25525px;
+ }
+ 
+}
+ 
+@-ms-keyframes "bannermove" {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -25525px;
+ }
+ 
+}
+ 
+@-o-keyframes "bannermove" {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -25525px;
+ }
+ 
 }

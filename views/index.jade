@@ -4,11 +4,15 @@ block body
   .container-fluid
     .row-fluid
       h1 HN TickerTape
-    div(ng-controller='AppCtrl')
-      .row-fluid
-        h3 New Headlines
-      .row-fluid.ticker-item(ng-repeat='message in messages', ng-cloak)
-        .span12 
+      h3 New Headlines
+    div.photobanner(ng-controller='AppCtrl')
+      .ticker-item(ng-repeat='message in messages', ng-cloak)
+        .object-span
+          a(ng-href='{{message.url}}', target="_blank")
+            p.tickerText {{message.text}} {{message.domain}}
+    div.photobanner.two(ng-controller='AppCtrl')
+      .ticker-item.two(ng-repeat='message in messages', ng-cloak)
+        .object-span
           a(ng-href='{{message.url}}', target="_blank")
             p.tickerText {{message.text}} {{message.domain}}
 
